@@ -23,13 +23,13 @@ function playAudio(loc) {
 function countdown(seconds, dis) {
     loop = setInterval(function () {
 
-        display.textContent = hours + ":" + minutes + ":" + seconds;
+        dis.textContent = hours + ":" + minutes + ":" + seconds;
 
         if (--timer < 0) {
             clearInterval(loop);
-            display.textContent = "Time Is Up!";
-            alert("You have reached the end of your task.")
+            dis.textContent = "Time Is Up!";
             playAudio("/static/beep.wav");
+            alert("You have reached the end of your task.")     
         }
     }, 1000);
 }
