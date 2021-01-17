@@ -1,5 +1,7 @@
 # Couple Depressed Boys HackED 2021 Project
 
+<img src="https://raw.githubusercontent.com/deadpools-besty/timebox/images/app/images/Group%202%402x.png">
+
 ## Description (from a reddit comment):
 
 >  It would have you roll a virtual die, (or give an option for two dice as well, for slightly longer timeboxing), and then switch 
