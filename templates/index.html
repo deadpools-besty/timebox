@@ -8,7 +8,7 @@
         <div class="app-title"><p>Time Box</p></div>
         <div class="die-container">
             <div class="die">
-                <div class="die-icon1"><img class="d1" src="/static/dice1.svg"/></div>
+                <div class="die-icon1"><img class="d1"/></div>
                 <div class="die-icon2"><img class="d2"/></div>
             </div>
             <button class="die-roll">Press To Roll!</button>
@@ -16,6 +16,6 @@
         </div>
     </div>
 
-    <script src="code.js"></script>
+    <script src="{{ url_for('static', filename='code.js') }}"></script>
 </body>
 </html>
