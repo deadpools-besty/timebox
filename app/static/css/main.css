@@ -15,4 +15,5 @@ h1 {
 
     font-family: "Gilroy";
     src: url(static/css/fonts/Gilroy-Extrabold.ttf);
+    src: url(static/css/fonts/Gilroy-Extrabold.woff) format("woff");
 }
