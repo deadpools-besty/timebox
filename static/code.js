@@ -21,12 +21,14 @@ function playAudio(loc) {
 
 //countdown
 function countdown(seconds, dis) {
-    setInterval(function () {
+    loop = setInterval(function () {
 
         display.textContent = hours + ":" + minutes + ":" + seconds;
 
         if (--timer < 0) {
-            timer = duration;
+            clearInterval(loop);
+            display.textContent = "Time Is Up!";
+            alert("You have reached the end of your task.")
         }
     }, 1000);
 }
