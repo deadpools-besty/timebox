@@ -1,1 +1,1 @@
-web: flask db upgrade; flask translate compile; gunicorn -b :$PORT timebox:app
+web: flask; flask translate compile; gunicorn -b :$PORT timebox:app
