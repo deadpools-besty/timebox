@@ -29,6 +29,7 @@ function countdown(seconds, dis) {
             clearInterval(loop);
             display.textContent = "Time Is Up!";
             alert("You have reached the end of your task.")
+            playAudio("/static/beep.wav");
         }
     }, 1000);
 }
