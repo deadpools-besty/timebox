@@ -1,7 +1,7 @@
-from app import app
 from flask import render_template, send_from_directory, Flask
 import os
-
+app = Flask(__name__)
+    
 @app.route('/')
 @app.route('/index')
 def index():
@@ -11,3 +11,6 @@ def index():
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'), 'timebox-logo.png', mimetype='image/vnd.microsoft.icon')
+
+if __name__ == "__main__":
+    app.run()
