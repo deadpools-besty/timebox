@@ -3,11 +3,30 @@ body { max-width: auto; margin: 20px; background: #fafafa; }
 h1 { 
     font-family: Gilroy; 
     
+    color: white; 
+    
+    margin: 1rem 0; 
+
+    font-size: 80px;
+    
+    text-align: left;
+    padding-left: 5px;
+
+}
+
+h2 {
+
+    font-family: Gilroy; 
+    
     color: #1e5ef3; 
     
     margin: 1rem 0; 
 
     font-size: 80px;
+    
+    text-align: left;
+    padding-left: 5px;
+
 
 }
 
@@ -18,3 +37,24 @@ h1 {
     src:
     url(static/css/fonts/Gilroy-Extrabold.woff) format("woff");
 }
+
+.header {
+    text-align: left;
+    background: #1e5ef3;
+    color: white;
+    font-size: 30px;
+    margin: auto;
+  }
+
+  p {
+
+    font-family: "Gilroy";
+    color:#1e5ef3;
+    font-size: 30px;
+
+  }
+
+  .inline {
+
+    display: inline;
+  }

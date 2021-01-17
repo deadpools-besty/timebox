@@ -3,7 +3,41 @@
     <head>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
     </head>
+    <script>
+
+        function num1(){
+
+            var number = 1;
+            
+            number.valueOf();
+            
+        }
+
+    </script>
+
+<script>
+
+    function num2(){
+
+        var number2 = 2;
+        
+        number2.valueOf();
+        
+    }
+
+</script>
+
 <body>
-<h1>Timebox.</h1>
+    <div class="header">
+
+        <h1>Timebox.</h1>
+
+    </div>
+
+    <p>How many die do you want?</p>
+    <div class="inline">
+        <button type="button" onclick="num1()">1</button>
+        <button type="button" onclick="num2()">2</button>
+    </div>
 </body>
 </html>
