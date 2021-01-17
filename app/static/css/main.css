@@ -1,0 +1,20 @@
+body { max-width: auto; margin: 20px; background: #fafafa; }
+
+h1 { 
+    font-family: Gilroy; 
+    
+    color: #1e5ef3; 
+    
+    margin: 1rem 0; 
+
+    font-size: 80px;
+
+}
+
+@font-face{
+
+    font-family: "Gilroy";
+    src: url(static/css/fonts/Gilroy-Extrabold.ttf);
+    src:
+    url(static/css/fonts/Gilroy-Extrabold.woff) format("woff");
+}
