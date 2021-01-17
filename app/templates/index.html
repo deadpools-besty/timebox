@@ -1,9 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        {{ JSGlue.include() }}
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
     </head>
 <body>
-<h1>Timebox.</h1>
+<div class="container">
+        <div class="app-title"><p>Time Box</p></div>
+        <div class="die-container">
+            <div class="die">
+                <div class="die-icon1"><img class="d1"/></div>
+                <div class="die-icon2"><img class="d2"/></div>
+            </div>
+            <button class="die-roll">Press To Roll!</button>
+            <p class="result"></p>
+            <audio class="s" src="{{ url_for('static', filename='js/assets/dicesound.wav') }}"></audio>
+            <p class="timer"></p>
+        </div>
+    </div>
+
+    <script type='text/javascript' src="{{ url_for('static', filename='main.js') }}"></script>
 </body>
 </html>

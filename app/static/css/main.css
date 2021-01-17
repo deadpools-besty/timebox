@@ -1,19 +1,35 @@
-body { max-width: auto; margin: 20px; background: #fafafa; }
-
-h1 { 
-    font-family: Gilroy; 
-    
-    color: #1e5ef3; 
-    
-    margin: 1rem 0; 
-
-    font-size: 80px;
+*{
+    margin:0;
+    padding:0;
 
 }
+html{
+    height:100%;
+    background: linear-gradient(to right bottom, #003973, #e5e5be);
+}
+.container{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.app-title{
+    font-size: 50px;
+}
 
-@font-face{
+.die-container{
+    font-size:30px;
+}
 
-    font-family: "Gilroy";
-    src: url(static/css/fonts/Gilroy-Extrabold.ttf);
-    src: url(static/css/fonts/Gilroy-Extrabold.woff) format("woff");
+.die-roll{
+    position: fixed;
+    background-color: greenyellow;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
 }
