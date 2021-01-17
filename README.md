@@ -4,7 +4,9 @@
 
 <img src=https://raw.githubusercontent.com/deadpools-besty/timebox/images/app/images/Timebox%20Logo-01.png align="left" width="200" hspace="10" vspace="10">
 
-<br>Have you ever wanted a way to allocate time to do work? In our busy lives, we need a simple and efficient way to organize our time. Well, I present to you a webpage that does exactly that. Meet Timebox, your personal timeboxxing page. The Timebox program allows the user to roll 2 dice, each die generates a random number from 1 to 6. The result 2 dice will be in between 2 and 12, which will create the timer for the user from 20 to 120 minutes, respectively. When the timer is finished, an alert sound will be played to notify the user that the time is over.<br>
+<br>Have you ever wanted a way to allocate time to do work? In our busy lives, we need a simple and efficient way to organize our time. Well, I present to you a webpage that does exactly that. Meet Timebox, your personal timeboxxing page. The Timebox program allows the user to roll 2 dice, each die generates a random number from 1 to 6. The result 2 dice will be in between 2 and 12, which will create the timer for the user from 20 to 120 minutes, respectively. When the timer is finished, an alert sound will be played to notify the user that the time is over.
+
+<br>
 
 
 ## Inspiration (from a Reddit comment):
