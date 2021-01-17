@@ -7,32 +7,31 @@ const result = document.querySelector(".result");
 const timer = document.querySelector(".timer");
 const asound = document.querySelector(".s");
 
-const dieDict = {
-    1 : "dice1.svg",
-    2 : "dice2.svg",
-    3 : "dice3.svg",
-    4 : "dice4.svg",
-    5 : "dice5.svg",
-    6 : "dice6.svg"
-}
-
-//audio func
 function playAudio(loc) {
     new Audio(loc).play();
 }
 
+asound.addEventListener('ended', function(){
+    if(flag){
+        asound.play()
+    }
+});
+
 //countdown
 function countdown(seconds, dis) {
-    setInterval(function () {
+    loop = setInterval(function () {
 
         display.textContent = hours + ":" + minutes + ":" + seconds;
 
         if (--timer < 0) {
-            timer = duration;
+            clearInterval(loop);
+            display.textContent = "Time Is Up!";
+            alert("You have reached the end of your task.")
+            beepAudio = Flask.url_for("static", {"filename":"assets/beep.wav"});
+            playAudio(beepAudio)
         }
     }, 1000);
 }
-
 //roll on click
 dieRoll.addEventListener("click", (e) => {
     dieRoll.style.display = "none";
@@ -77,8 +76,12 @@ function startTimer(duration, display) {
 
         if (--timer < 0) {
             display.textContent = "TIME IS UP!"
-
             clearInterval(loop);
+            display.textContent = "Time Is Up!";
+            flag = true;
+            alert("You have reached the end of your task.");
+            flag = false;
+        
 
         }
     }, 1000);
